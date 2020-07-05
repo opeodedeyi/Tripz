@@ -140,7 +140,7 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 300;
 }
 
@@ -158,6 +158,38 @@ body {
     color: var(--company-color);
 }
 
+.footer-socialmedia {
+    width: 80%;
+    max-width: 150px;
+}
+
+.footer-socialmedia-icons {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    padding: 0;
+}
+
+.footer-socialmedia-icon {
+    margin: 0;
+}
+
+.ss-icon {
+    width: 1.2rem;
+}
+
+.ss-icon svg {
+    width: 1.2rem;
+    color: var(--dark-text);
+}
+
+.ss-icon svg:hover {
+    color: var(--company-color);
+}
+
 .footer-copyright {
     background: var(--dark-text);
     color: var(--color-main);
@@ -165,7 +197,7 @@ body {
 }
 
 .last {
-    margin-bottom: 3rem;
+    margin-bottom: 1.2rem;
 }
 
 /* Small screens */
