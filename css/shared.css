@@ -7,6 +7,7 @@
     --company-color: #5DADE2;
     --dark-text : #484848;
     --company-color-dark: #2D5670;
+    --gray-light: #DFDFDF;
 }
 
 body {
@@ -51,6 +52,7 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid var(--gray-light);
 }
 
 .aboutus {
@@ -195,6 +197,10 @@ body {
         margin-top: 1rem;
     }
 
+    .offer {
+        margin-top: 1rem;
+    }
+
     .ls {
         display: none;
     }
@@ -227,6 +233,10 @@ body {
     }
 
     .aboutus {
+        margin-top: 3rem;
+    }
+
+    .offer {
         margin-top: 3rem;
     }
 
