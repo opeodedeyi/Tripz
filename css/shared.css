@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Dancing+Script:wght@700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    --color-main: #ffffff;
+    --company-color: #5DADE2;
+    --dark-text : #484848;
+    --company-color-dark: #2D5670;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--dark-text);
+}
+
+.home-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    height: 5rem;
+}
+
+.home-header-logo a,
+.mobile-navigation-logo a {
+    font-size: 2.2rem;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.home-header-logo a {
+    color: var(--company-color);
+}
+
+.home-header-navigation-items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutus {
+    width: 90%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.aboutus-title p {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.aboutus-content {
+    text-align: center;
+}
+
+.aboutus-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.section-secondary {
+    background-color: var(--company-color-dark);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-title p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--color-main);
+}
+
+.offer-content {
+    text-align: center;
+}
+
+.offer-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
+/* Small screens */
+@media only screen and (max-width: 700px) {
+
+    .backdrop {
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .home-header-logo a {
+        margin: 1rem 0;
+    }
+
+    .home-header-burger a {
+        text-decoration: none;
+        color: var(--dark-text);
+    }
+
+    .mobile-navigation-remove a {
+        text-decoration: none;
+        color: var(--dark-text);
+    }
+
+    .mobile-navigation-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        height: 6.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .home-header-burger {
+        width: 1.2rem;
+    }
+
+    .mobile-navigation-link svg {
+        width: 1.2rem;
+    }
+
+    .mobile-navigation {
+        display: none;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: 0;
+        background: var(--color-main);
+        width: 80%;
+        height: 100vh;
+    }
+
+    .mobile-navigation-logo a {
+        color: var(--company-color);
+        margin-left: 1rem;
+    }
+
+    .mobile-navigation-remove a {
+        margin-right: 1rem;
+    }
+
+    .mobile-navigation-items {
+        height: 100%;
+        list-style: none;
+        margin: 0 1rem .5rem 1rem;
+        padding: 0;
+    }
+
+    .mobile-navigation-item {
+        margin: 0 .5rem 1rem;
+    }
+
+    .mobile-navigation-item a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        font-weight: 500;
+        color: var(--dark-text);
+    }
+
+    .aboutus {
+        margin-top: 1rem;
+    }
+
+    .ls {
+        display: none;
+    }
+}
+
+/* Large screens */
+@media only screen and (min-width: 701px) {
+
+    .home-header {
+        padding: 0;
+    }
+
+    .home-header-navigation-item {
+        margin: 0 16px;
+    }
+
+    .home-header-logo p {
+        margin: 1rem;
+    }
+
+    .home-header-navigation-item a {
+        text-decoration: none;
+        color: var(--color-text);
+        font-weight: 500;
+        padding: 3px 0;
+    }
+
+    .home-header-navigation-item:hover {
+        color: var(--company-color);
+    }
+
+    .aboutus {
+        margin-top: 3rem;
+    }
+
+    .ss {
+        display: none;
+    }
+}
