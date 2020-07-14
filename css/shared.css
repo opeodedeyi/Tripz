@@ -95,15 +95,67 @@ body {
     color: var(--color-main);
 }
 
-.offer-content {
+.offer-title {
     text-align: center;
 }
 
-.offer-content p {
-    font-size: 1.1rem;
-    line-height: 1.6;
+.offer-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
 }
 
+.offer-content-card {
+    max-width: 400px;
+    height: 300px;
+    margin: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: var(--color-main);
+    border-radius: 10px;
+}
+
+.offer-content-card-title {
+    text-align: center;
+    padding: 10px 40px;
+    font-size: 1.1rem;
+    color: var(--company-color);
+    font-weight: 800;
+}
+
+.offer-content-card-text {
+    text-align: center;
+    padding: 10px 40px 20px;
+    font-size: 1rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 3.4rem;
+}
+
+.footer-copyright {
+    background: var(--dark-text);
+    color: var(--color-main);
+    width: 100%;
+    height: 100%;
+}
+
+.footer-copyright p {
+    padding: 0;
+}
 
 /* Small screens */
 @media only screen and (max-width: 700px) {
@@ -199,6 +251,7 @@ body {
 
     .offer {
         margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .ls {
@@ -238,6 +291,11 @@ body {
 
     .offer {
         margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .offer-content-card {
+        margin: 2rem 1rem;
     }
 
     .ss {
