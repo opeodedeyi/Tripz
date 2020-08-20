@@ -136,6 +136,42 @@ body {
     font-size: 1rem;
 }
 
+.section-nonexistent {
+    height: calc(100vh - 8.4rem);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-request {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.request-title p {
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.nonexistent {
+    font-size: 1rem;
+}
+
+.nonexistent a {
+    text-decoration: none;
+    color: var(--company-color);
+}
+
+.nonexistent a:hover {
+    text-decoration: underline;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
